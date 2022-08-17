@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./productos.html">Producto</a></li>
+                <li><a href="./servicios.html">Servicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <form>
+                <label for="nombre_apellido">Ingrese Nombre y Apellido</label>
+                <input type="text" name="nombre_apellido"> <br>
+                <label for="edad">ingrese su edad</label>
+                <input type="number" name="edad"> <br>
+                <label for="observaciones">Ingrese dudas</label><br>
+                <textarea type=text name="observaciones"></textarea><br>
+
+                <input type="submit" value="Enviar info" />
+                <input type="reset" value="Borrar info" />
+                <input type="button" value="Fuera de funcionamiento" /><br>
+
+                <div>Hombre</div>
+                <input type="radio" name="sexo" value="Hombre" />
+                <div>Mujer</div>
+                <input type="radio" name="sexo" value="Mujer" /><br>
+
+                <select name="talles">
+                    <option value="L">Large</option>
+                    <option value="M">Medium</option>
+                    <option value="S">Small</option>
+                </select>
+
+                <div>Acepta terminos y condiciones</div>
+                <input type="checkbox" name="acepta" value="1">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <ul class="redes">
+            <img class="icon" src="../imagenes/icons8-facebook-nuevo (1).svg" alt="iconofacebook">
+            <img class="icon" src="../imagenes/icons8-instagram (1).svg" alt="iconoinstagram">
+            <img class="icon" src="../imagenes/icons8-twitter-cuadrado-100.png" alt="iconotwitter">
+        </ul>
+    </footer>
+</body>
+
+</html>

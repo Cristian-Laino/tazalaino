@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    grid-area: header;
+}
+
+.tituloinicio {
+    grid-area: tituloinicio;
+}
+
+.primersubtitulo {
+    grid-area: primersubtitulo;    
+}
+
+.segundosubtitulo {
+    grid-area: segundosubtitulo;
+}
+
+footer {
+    grid-area: footer;
+}
+.fotostazas {
+    grid-area: fotostazas;
+}
+
+/* ESTRUCTURA CON GRID */
+
+.contenedor-grid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto auto;
+    grid-template-areas: 
+    "header  header header"
+    "tituloinicio tituloinicio tituloinicio"
+    "primersubtitulo primersubtitulo primersubtitulo"
+    "segundosubtitulo segundosubtitulo segundosubtitulo"
+    "footer footer footer";
+}
+
+.contenedor-grid2 {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header"
+    "fotostazas fotostazas"
+    "footer footer";
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:475px) {
+    .contenedor-grid {
+        margin: 0%;        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;  
+        grid-template-areas:
+        "header"
+        "tituloinicio"
+        "primersubtitulo"
+        "segundosubtitulo"
+        "footer";
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img{
+        width: 350px;
+        height: 200px;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+header h1 {
+    color: rgb(198, 180, 201);
+}
+
+body {
+    text-align: center;
+    font-weight:bolder;
+    background-color: rgb(190, 180, 190);
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+header {
+    background-color: rgb(68, 61, 68);
+    padding: 30px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    display: inline-block;
+}
+
+h1 {
+    color: rgb(2, 0, 2);
+    padding: 20px;
+    margin: 20px 55px 20px 55px;
+}
+
+p {
+    color: rgb(11, 1, 20);
+    font-weight: bold;
+    margin: 35px;
+}
+
+.texto {
+    border-radius: 50px;
+}
+
+img{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.subtitulo1 {
+    color: rgb(78, 43, 75);
+}
+
+h2 {
+    color: darkmagenta;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: inherit;
+    line-height: 35px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+
+footer {
+    padding: 10px;
+    background-color: rgb(68, 61, 68);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fotoprincipal {
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    width: 70%;
+    border-radius: 20px;
+ }
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    line-height: 35px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.parrafo {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info {
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.fotostazas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.fotos_galeria {
+    text-align: center;
+}
+
+.galeria{
+    width: 300px;
+    height: 250px;
+    border: 8px solid black;
+    margin: 10px;
+}

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(190, 180, 190);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  grid-area: header;
+}
+
+.tituloinicio {
+  grid-area: tituloinicio;
+}
+
+.primersubtitulo {
+  grid-area: primersubtitulo;
+}
+
+.segundosubtitulo {
+  grid-area: segundosubtitulo;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.fotostazas {
+  grid-area: fotostazas;
+}
+
+/* ESTRUCTURA CON GRID */
+.contenedor-grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto auto auto;
+  grid-template-areas: "header  header header" "tituloinicio tituloinicio tituloinicio" "primersubtitulo primersubtitulo primersubtitulo" "segundosubtitulo segundosubtitulo segundosubtitulo" "footer footer footer";
+}
+
+.contenedor-grid2 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "fotostazas fotostazas" "footer footer";
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 475px) {
+  .contenedor .contenedor2 .contenedor3 .contenedor4 .contenedor5 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "tituloinicio" "primersubtitulo" "segundosubtitulo" "footer";
+  }
+}
+@media screen and (max-width: 475px) and (min-width: 475px) and (max-width: 912px) {
+  .contenedor .contenedor2 .contenedor3 .contenedor4 .contenedor5 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "tituloinicio" "primersubtitulo" "segundosubtitulo" "footer";
+  }
+}
+@media screen and (max-width: 475px) and (min-width: 912px) and (max-width: 1024px) {
+  .contenedor .contenedor2 .contenedor3 .contenedor4 .contenedor5 {
+    width: 100%;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+header h1 {
+  color: rgb(198, 180, 201);
+}
+
+body {
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(190, 180, 190);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  justify-content: center;
+  background-color: rgb(68, 61, 68);
+  padding: 30px;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: rgb(2, 0, 2);
+  padding: 20px;
+  margin: 20px 55px 20px 55px;
+}
+
+p {
+  color: rgb(11, 1, 20);
+  font-weight: bold;
+  margin: 35px;
+}
+
+.texto {
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.fotoprincipal {
+  margin-top: 20px;
+  margin-left: 75px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+  line-height: 35px;
+}
+
+h2 {
+  color: darkmagenta;
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  line-height: 35px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: inherit;
+  line-height: 35px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+.subtitulo1 {
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  padding: 10px;
+  background-color: rgb(68, 61, 68);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.parrafo {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.fotostazas {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+
+.fotos__galeria {
+  width: 300px;
+  height: 300px;
+  border: 8px solid black;
+  margin: 10px;
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgb(190, 180, 190), rgb(68, 61, 68));
+}
+
+.colorok {
+  background-color: rgb(68, 61, 68);
+}
+
+.historia {
+  font-size: 20px;
+}/*# sourceMappingURL=tazas.css.map */

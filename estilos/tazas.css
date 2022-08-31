@@ -253,6 +253,9 @@ footer {
   background-color: rgb(168, 7, 7);
 }
 
-.historia {
+.textohistoria, .historia {
+  color: white;
+  margin: 30px;
+  font-weight: bold;
   font-size: 20px;
 }/*# sourceMappingURL=tazas.css.map */

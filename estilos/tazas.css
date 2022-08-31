@@ -76,7 +76,7 @@ footer {
     grid-template-areas: "header" "tituloinicio" "primersubtitulo" "segundosubtitulo" "footer";
   }
 }
-@media screen and (max-width: 475px) and (min-width: 475px) and (max-width: 912px) {
+@media screen and (max-width: 475px) and (max-width: 912px) and (min-width: 475px) {
   .contenedor .contenedor2 .contenedor3 .contenedor4 .contenedor5 {
     width: 100%;
     display: grid;
@@ -85,7 +85,7 @@ footer {
     grid-template-areas: "header" "tituloinicio" "primersubtitulo" "segundosubtitulo" "footer";
   }
 }
-@media screen and (max-width: 475px) and (min-width: 912px) and (max-width: 1024px) {
+@media screen and (max-width: 475px) and (max-width: 1024px) and (min-width: 912px) {
   .contenedor .contenedor2 .contenedor3 .contenedor4 .contenedor5 {
     width: 100%;
   }
@@ -109,7 +109,7 @@ body {
 
 header {
   justify-content: center;
-  background-color: rgb(68, 61, 68);
+  background-color: rgb(168, 7, 7);
   padding: 30px;
   margin: 0;
 }
@@ -197,7 +197,7 @@ p {
 
 footer {
   padding: 10px;
-  background-color: rgb(68, 61, 68);
+  background-color: rgb(168, 7, 7);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -250,7 +250,7 @@ footer {
 }
 
 .colorok {
-  background-color: rgb(68, 61, 68);
+  background-color: rgb(168, 7, 7);
 }
 
 .historia {

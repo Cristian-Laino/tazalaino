@@ -1,27 +1,10 @@
 header {
     justify-content: center;
-    background-color: rgb(68, 61, 68);
+    background-color: rgb(168, 7, 7);
     padding: 30px;
     margin: 0;
 }
 
 header h1 {
     color: rgb(198, 180, 201);
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 2rem;
-}
-
-li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-a {
-    text-decoration: none;
-    color: white;
 }

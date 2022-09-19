@@ -49,11 +49,11 @@ footer {
     "footer footer footer";
 }
 
-.contenedor-grid2 {
+.contenedor-grid3 {
     display: grid;
-    min-height: 100vh;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "header header"
     "fotostazas fotostazas"
@@ -103,10 +103,6 @@ html {
     font-size: 62.5%;
 }
 
-header h1 {
-    color: rgb(198, 180, 201);
-}
-
 body {
     text-align: center;
     font-weight:bolder;
@@ -137,7 +133,7 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -169,7 +165,8 @@ img{
     margin-left: 75px;
     margin-bottom: 30px;
     margin-right: 50px;
-    width: 70%;
+    width: 700px;
+    height: 500px;
     border-radius: 20px;
 }
 
@@ -183,7 +180,7 @@ img{
 }
 
 h2 {
-    color: darkmagenta;
+    color: black;
     text-align: center;
     font-weight: 900;
     font-size: 40px;
@@ -201,7 +198,7 @@ p {
 }
 
 .subtitulo1 {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 footer {
@@ -228,27 +225,17 @@ footer {
     justify-content: center;
 }
 
-.parrafo {
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.fotostazas{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+.fotostazas {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:15px;
     justify-items: center;
-}
+}   
 
 .fotos__galeria {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border: 8px solid black;
     margin: 10px;
 }
@@ -264,7 +251,7 @@ footer {
 }
 
 .textohistoria{
-    color: white;
+    color: black;
     margin: 30px;
     font-weight:bold;
     font-size: 20px;
@@ -285,9 +272,15 @@ footer {
 
 .card-body .card-title{
     font-size: 30px;
-    color: white;
+    color: black;
 } 
 
 .card-text{
     @extend .card-body
+}
+
+.tituloProductos .tituloNosotros{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
 }
